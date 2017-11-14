@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/my_Style.css">
+	<!-- Latest compiled and minified JavaScript -->
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<title>課程競品分析</title>
+</head>
+<body>
+	<!-- modal 登入驗証-->
+	<div class="modal fade" id="textModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">請填帳號、密碼登入</h4>
+				</div>
+				<div class="modal-body">
+					<from class="form"><!-- form-inline -->
+						<div class="form-group">
+							<label class="sr-only" for="mobilePhone">帳號</label>
+							<input typy="tel" class="form-control" id="mobilePhone" placeholder="帳號"></input>
+							<br/>
+						</div>	
+						<div class="form-group">
+							<label class="sr-only" for="mobilePhone">密碼</label>
+							<input typy="tel" class="form-control" id="mobilePhone" placeholder="密碼"></input>
+							<br/>
+						</div>
+					</from>
+				</div>
+				<div class="modal-footer">
+			    	<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+			    	<button type="submit" class="btn btn-primary">確定</button>
+			    </div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="myLogo" href="#"><!-- navbar-brand -->
+                	<img class="img-responsive" src="images/logo.png" alt="">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="text-center" href="index.html">關於我們</a></li>
+                    <li><a class="text-center" id="myAnchor" href="index.html">如何使用</a></li>
+                    <li><a class="text-center" href="startUse.html">開始體驗</a></li>
+                    <li><a class="text-center" data-toggle="modal" href="#textModal">登入</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+	<!-- jumbotron -->
+	<div class="jumbotron myJumbotron">
+		<div class="bg-jumbotron">
+			<div class="container">
+				<img class="img-responsive center-block imgBanner" src="images/img-banner.svg" alt="">
+				<h1 class="text-center">課程競品分析圖表</h1>
+				<p class="text-center">透過競品分析幫您快速地得到您希望比較的競爭品項報表，減少您找資料、比較資料的麻煩。</p>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<!-- content start-->
+	<div class="container">
+		<ol class="breadcrumb">
+		  	<li><a href="startUse.html"> 開始體驗 </a></li>
+		  	<li class="active"> Column Range Chart </li>
+		</ol>
+		<div class="btn-group " role="group" aria-label="..."><!-- hidden-lg -->
+		  	<button type="button" class="btn btn-primary">下載檔案</button>
+		  	<button type="button" class="btn btn-default">列印資料</button>
+		</div>
+
+		<div>
+			<img class="img-responsive" src="images/column.png" alt="">
+		</div>
+
+		<!-- explanation-->
+		<h2 class="page-header">圖表分析說明</h2>
+		<div class="row">
+			<div class="col-sm-6 col-xs-12">
+				<p class="">1. 如何於「資源回收管理資訊系統(RRMS)」進行「營運統計季報表」申報作業？答︰(1)回收業：登入系統後於「回收處理作業管理系統 > 回收業線上申請作業 功能 > 營運統計管理功能 > 營運統計報表管理功能 > 申報、查詢作業」，選擇欲申報之「年度」及「季別」並點選「送出查詢」，即可進行申報作業。</p>
+			</div>
+			<div class="col-sm-6 col-xs-12">
+				<p class="">1. 如何於「資源回收管理資訊系統(RRMS)」進行「營運統計季報表」申報作業？答︰(1)回收業：登入系統後於「回收處理作業管理系統 > 回收業線上申請作業 功能 > 營運統計管理功能 > 營運統計報表管理功能 > 申報、查詢作業」，選擇欲申報之「年度」及「季別」並點選「送出查詢」，即可進行申報作業。</p>
+			</div>
+		</div>
+
+	</div><!-- container end -->
+	<hr>
+
+<!-- Footer -->
+<footer>
+    <div class="row">
+        <div class="col-lg-12">
+             <p class="text-center">Copyright © 2016 資訊工業策進會. All rights reserved</p>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- jQuery -->
+<!-- <script src="js/jquery.js"></script> -->
+<!-- Bootstrap Core JavaScript -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+
+
+
+
+</body>
+</html>

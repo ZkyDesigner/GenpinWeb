@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/my_Style.css">
+	<!-- Latest compiled and minified JavaScript -->
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<title>課程競品分析</title>
+</head>
+<body>
+	<!-- modal 登入驗証-->
+	<div class="modal fade" id="textModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">請填帳號、密碼登入</h4>
+				</div>
+				<br/>
+				<div class="modal-body">
+					<from class="form"><!-- form-inline -->
+						<div class="form-group">
+							<label class="" for="">帳號、（例如：abc@gmail.com）</label>
+							<input typy="" class="form-control" id="" placeholder="帳號"></input>
+							<!-- <br/> -->
+						</div>	
+						<div class="form-group">
+							<label class="" for="">密碼、（英文加數字共8碼）</label>
+							<input typy="" class="form-control" id="" placeholder="密碼"></input>
+							<!-- <br/> -->
+						</div>
+					</from>
+				</div>
+				<div class="modal-footer">
+			    	<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+			    	<button type="submit" class="btn btn-primary">確定</button>
+			    </div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="myLogo" href="#"><!-- navbar-brand -->
+                	<img class="img-responsive" src="images/logo.png" alt="">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="text-center" href="index.html">關於我們</a></li>
+                    <li><a class="text-center" id="myAnchor" href="#section01">如何使用</a></li>
+                    <li><a class="text-center" href="startUse.html">開始體驗</a></li>
+                    <li><a class="text-center" data-toggle="modal" href="#textModal">登入</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+	<!-- jumbotron -->
+	<div class="jumbotron myJumbotron">
+		<div class="bg-jumbotron">
+			<div class="container">
+				<img class="img-responsive center-block imgBanner" src="images/img-banner.svg" alt="">
+				<h1 class="text-center">課程競品分析</h1>
+				<p class="text-center">透過競品分析幫您快速地得到您希望比較的競爭品項報表，減少您找資料、比較資料的麻煩。</p>
+				<a class="btn btn-primary btn-lg center-block my_btn" href="#">馬上體驗</a>
+			</div>
+		</div>
+	</div>
+	
+	<a id="section01"></a><br/>
+	<!-- content start-->
+	<div class="container">
+		<!-- explanation-->
+		<h2 class="page-header">如何使用</h2>
+		<p class="my_Paragraph">快速收集品項資料與圖表，幫助您快速分析。</p>
+		<!-- step one -->
+		<div class="row">
+			<div class="col-lg-5 col-sm-6 col-xs-12">
+				<img class="img-responsive" src="images/img-step-one.png" alt="Responsive image">
+			</div>
+			<div class="col-lg-1 visible-lg">
+				<img src="images/circle01.svg" alt="">
+			</div>
+			<div class="col-lg-6 col-sm-6 col-xs-12">
+				<h3>選擇分析方式、類別</h3>
+				<p>勾選您希望比較的類別，例如：藝術。我們共分五大類：電腦、藝術、運動、英文、日文。您也可意在最後“輸入類別”增加您要的類別。</p>
+			</div>
+		</div>	
+		<!-- step two-->
+		<div class="row">
+			<div class="col-lg-5 col-sm-6 col-xs-12 col-sm-push-6">
+				<img class="img-responsive" src="images/img-step-two.png" alt="">
+			</div>
+			<div class="col-lg-1 visible-lg">
+				<img src="images/circle02.svg" alt="">
+			</div>
+			<div class="col-lg-5 col-sm-6 col-xs-12 col-sm-pull-6">
+				<h3>選擇比較項目</h3>
+				<p>勾選您希望比較的項目，例如：文化大學。比較項目為多選，可以勾選超過一個以上的項目。您也可意在最後“輸入項目”增加您要的項目。</p>
+			</div>
+		</div>
+		<!-- step three -->	
+		<div class="row">
+			<div class="col-lg-5 col-sm-6 col-xs-12 ">
+				<img class="img-responsive" src="images/img-step-three.png" alt="">
+			</div>
+			<div class="col-lg-1 visible-lg">
+				<img src="images/circle03.svg" alt="">
+			</div>
+			<div class="col-lg-6 col-sm-6 col-xs-12">
+				<h3>觀看報表</h3>
+				<p>最終將出現三個報表供您參考與比較，Course Date Range、Tree Map、Spider Web Diagram。</p>
+			</div>
+		</div>	
+
+		<!-- more-->
+		<h2 class="page-header hidden-xs">更多優點</h2>
+		<p class="hidden-xs my_Paragraph">更快速、更簡單的方式幫您完成商業報表。</p>
+		<div class="row">
+			<div class="col-sm-4 hidden-xs">
+				<img class="img-responsive center-block" src="images/img-more-one.png" alt="">
+				<h3 class="text-center">全方位報表比較</h3>
+				<p class="text-center">最終將出現三個報表供您參考與比較，Course Date Range、Tree Map、Spider Web Diagram。</p>
+			</div>
+			<div class="col-sm-4 hidden-xs">
+				<img class="img-responsive center-block" src="images/img-more-two.png" alt="">
+				<h3 class="text-center">報表下載列印</h3>
+				<p class="text-center">最終將出現三個報表供您參考與比較，Course Date Range、Tree Map、Spider Web Diagram。</p>
+			</div>
+			<div class="col-sm-4 hidden-xs">
+				<img class="img-responsive center-block" src="images/img-more-three.png" alt="">
+				<h3 class="text-center">創業</h3>
+				<p class="text-center">最終將出現三個報表供您參考與比較，Course Date Range、Tree Map、Spider Web Diagram。</p>
+			</div>
+		</div>
+
+		<!-- start using -->
+		<div class="container">
+			<a class="btn btn-primary btn-lg center-block my_btn" href="#">立即開始</a>
+		</div>
+	</div><!-- container end -->
+	<hr>
+
+<!-- Footer -->
+<footer>
+    <div class="row">
+        <div class="col-lg-12">
+             <p class="text-center">Copyright © 2016 資訊工業策進會. All rights reserved</p>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- jQuery -->
+<!-- <script src="js/jquery.js"></script> -->
+<!-- Bootstrap Core JavaScript -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script>
+	$(document).ready(function(){
+	    $('#myAnchor').bind('click.smoothscroll',function (e) {
+	        e.preventDefault();
+	      
+	        var target = this.hash,
+	        $target = $(target);
+	      
+	        $('html, body').stop().animate({
+	            'scrollTop': $target.offset().top-40
+	        }, 900, 'swing', function () {
+	            window.location.hash = target;
+	        });
+	    });
+	});
+</script>
+
+
+
+</body>
+</html>

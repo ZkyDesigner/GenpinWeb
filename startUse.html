@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/my_Style.css">
+	<!-- Latest compiled and minified JavaScript -->
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<title>課程競品分析</title>
+</head>
+<body>
+	<!-- modal 登入驗証-->
+	<div class="modal fade" id="textModal" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">請填帳號、密碼登入</h4>
+				</div>
+				<div class="modal-body">
+					<from class="form">
+						<div class="form-group">
+							<label class="sr-only" for="mobilePhone">帳號</label>
+							<input typy="tel" class="form-control" id="mobilePhone" placeholder="帳號"></input>
+							<br/>
+						</div>	
+						<div class="form-group">
+							<label class="sr-only" for="mobilePhone">密碼</label>
+							<input typy="tel" class="form-control" id="mobilePhone" placeholder="密碼"></input>
+							<br/>
+						</div>
+					</from>
+				</div>
+				<div class="modal-footer">
+			    	<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+			    	<button type="submit" class="btn btn-primary">確定</button>
+			    </div>
+			</div>
+		</div>
+	</div>
+
+	<!-- modal column range -->
+	<div class="modal fade" id="ColumnRangeModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">Column Range</h4>
+				</div>
+				<div class="modal-body">
+					<from class="form">
+						<div class="form-group">
+							<h4>請選擇學校</h4>
+							<select class="form-control">
+								<option value="">文化大學</option>
+								<option value="">東華大學</option>
+							</select><br/>
+							<h4>請選擇課程</h4>
+							<select class="form-control">
+								<option value="">網頁設計</option>
+								<option value="">平面設計</option>
+							</select><br/>
+						</div>
+					</from>
+				</div>
+				<div class="modal-footer">
+			    	<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+			    	<button type="submit" class="btn btn-primary">確定</button>
+			    </div>
+			</div>
+		</div>
+	</div>
+
+	<!-- modal tree map -->
+	<div class="modal fade" id="TreeMapModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">Tree Map</h4>
+				</div>
+				<div class="modal-body">
+					<from class="form">
+						<div class="form-group">
+							<h4>請選擇學校</h4>
+							<select class="form-control">
+								<option value="">文化大學</option>
+								<option value="">東華大學</option>
+							</select><br/>
+						</div>
+					</from>
+				</div>
+				<div class="modal-footer">
+			    	<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+			    	<button type="submit" class="btn btn-primary">確定</button>
+			    </div>
+			</div>
+		</div>
+	</div>
+
+	<!-- modal spider web diagram -->
+	<div class="modal fade" id="SpiderWebDiagramModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">Tree Map</h4>
+				</div>
+				<div class="modal-body">
+					<from class="form">
+						<div class="form-group">
+							<h4>請選擇學校</h4><br/>
+							<div class="row">
+								<div class="col-lg-4">
+							    	<div class="input-group">    		
+							        	<input type="checkbox">中國文化大學
+							      		<!-- <input type="text" class="form-control"> -->
+							    	</div>
+							  	</div>
+							  	<div class="col-lg-4">
+							    	<div class="input-group">    		
+							        	<input type="checkbox">中國文化大學
+							      		<!-- <input type="text" class="form-control"> -->
+							    	</div>
+							  	</div>
+							  	<div class="col-lg-4">
+							    	<div class="input-group">    		
+							        	<input type="checkbox">中國文化大學
+							      		<!-- <input type="text" class="form-control"> -->
+							    	</div>
+							  	</div>
+							</div><!-- /.row -->
+							<div class="row">
+								<div class="col-lg-12">
+							    	<div class="input-group">
+							      		<span class="input-group-addon">
+							        		<input type="checkbox">
+							      		</span>
+							      		<input type="text" class="form-control">
+							    	</div>
+								</div>
+							</div>
+						</div>
+					</from>
+				</div>
+				<div class="modal-footer">
+			    	<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+			    	<button type="submit" class="btn btn-primary">確定</button>
+			    </div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="myLogo" href="#"><!-- navbar-brand -->
+                	<img class="img-responsive" src="images/logo.png" alt="">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="text-center" href="index.html">關於我們</a></li>
+                    <li><a class="text-center" id="myAnchor" href="index.html">如何使用</a></li>
+                    <li><a class="text-center" href="startUse.html">開始體驗</a></li>
+                    <li><a class="text-center" data-toggle="modal" href="#textModal">登入</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+	<!-- jumbotron -->
+	<div class="jumbotron myJumbotron">
+		<div class="bg-jumbotron">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<img class="img-responsive center-block imgBanner" src="images/img-banner.svg" alt="">
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<h2 class="">使用方式與步驟</h2>
+						<p class="">1、 選擇圖表類型</p>
+						<p class="">2、 填入篩選資料</p>
+						<p class="">3、 分析圖表數據</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- content start-->
+	<div class="container">
+		<!-- chart-->
+		<h2 class="page-header text-center">使用說明</h2>
+		<p class="text-center my_Paragraph">請選擇以下其中一個，請選擇以下其中一個，請選擇以下其中一個，請選擇以下其中一個，請選擇以下其中一個。</p>
+		<div class="row">
+			<!-- chart one -->
+			<div class="col-sm-4 col-xs-12 my_bottom"><!-- col-lg-4 col-md-4 --> 
+				<img class="img-responsive center-block" src="images/ColumnRange.png" alt="">
+				<h4 class="text-center">Column Range</h4>
+				<p class="text-center">最終將出現三個報表供您參考與比較，Course Date Range、Tree Map、Spider Web Diagram。</p>
+				<a class="btn btn-primary center-block my_btn" data-toggle="modal" href="#ColumnRangeModal">使用 Column Range</a>
+			</div>
+			<!-- chart two -->
+			<div class="col-sm-4 col-xs-12 my_bottom"><!-- col-lg-4 col-md-4 -->
+				<img class="img-responsive center-block" src="images/TreeMap.png" alt="">
+				<h4 class="text-center">Tree Map</h4>
+				<p class="text-center">最終將出現三個報表供您參考與比較，Course Date Range、Tree Map、Spider Web Diagram。</p>
+				<a class="btn btn-primary center-block my_btn" data-toggle="modal" href="#TreeMapModal">使用 Tree Map</a>
+			</div>
+			<!-- chart three -->
+			<div class="col-sm-4 col-xs-12 my_bottom"><!-- col-lg-4 col-md-4 -->
+				<img class="img-responsive center-block" src="images/SpiderWebDiagram.png" alt="">
+				<h4 class="text-center">Spider Web Diagram</h4>
+				<p class="text-center">最終將出現三個報表供您參考與比較，Course Date Range、Tree Map、Spider Web Diagram。</p>
+				<a class="btn btn-primary center-block my_btn" data-toggle="modal" href="#SpiderWebDiagramModal">使用 Spider Web Diagram</a>
+			</div>
+		</div>
+	</div><!-- container end -->
+	<hr>
+
+<!-- Footer -->
+<footer>
+    <div class="row">
+        <div class="col-lg-12">
+             <p class="text-center">Copyright © 2016 資訊工業策進會. All rights reserved</p>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- jQuery -->
+<!-- <script src="js/jquery.js"></script> -->
+<!-- Bootstrap Core JavaScript -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+
+
+
+
+</body>
+</html>

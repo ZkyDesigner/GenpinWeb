@@ -1,0 +1,89 @@
+*{
+	/* border: 1px solid; */
+	/* font-family: 微軟正黑體; */
+	overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: 900;
+	overflow: hidden;
+}
+img, a{
+	overflow: hidden;
+}
+.modal-open {
+padding-right: 0px !important;
+}
+
+/* logo 
+======================================== */
+.myLogo{
+	width: 150px;
+	margin-top: 6px;
+}
+/* Jumbotron 
+======================================== */
+.myJumbotron{
+	background-color: #009fa8;
+	color: #fff;
+	margin-top: 50px;
+}
+.bg-jumbotron{
+	background-image: url('../images/bg-banner.svg');
+}
+.myJumbotron img{
+	margin-bottom: 50px;
+}
+.imgBanner{
+	max-width: 200px;
+}
+/* btn 
+======================================== */
+.my_btn{
+	width: 230px;
+	margin-top: 30px;
+}
+/* row 
+======================================== */
+.row{
+	margin-bottom: 50px;
+}
+.my_Paragraph{
+	margin-bottom: 50px;
+}
+/* footer 
+======================================== */
+footer {
+    /* margin: 50px 0; */
+}
+.my_bottom{
+	margin-bottom: 50px;
+}
+/* Media Query
+======================================== */
+@media screen and (max-width: 767px){
+	.jumbotron{
+		/* height: 30vh; */
+		padding: 20px;
+	}
+	.jumbotron h1{
+		font-size: 1.2em;
+	}
+	.jumbotron p{
+		font-size: 1em;
+	}
+	.jumbotron .my_btn{
+		width: 180px;
+		height: 35px;
+		margin-top: 10px;
+	}
+	.jumbotron img{
+		display: none;
+	}
+	.jumbotron a{
+		font-size: 0.8em;
+	}
+	.myLogo{
+		padding-left: 10px;
+	}
+}
+
